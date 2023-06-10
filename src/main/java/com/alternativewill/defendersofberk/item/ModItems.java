@@ -2,9 +2,7 @@ package com.alternativewill.defendersofberk.item;
 
 import com.alternativewill.defendersofberk.DefendersOfBerk;
 import com.alternativewill.defendersofberk.item.custom.NightFuryArmorItem;
-import com.alternativewill.defendersofberk.item.custom.WingedNightFuryArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,9 +29,6 @@ public class ModItems {
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
     public static final RegistryObject<Item> NIGHTFURYSCALEBOOTS = ITEMS.register("nightfury_boots",
             () -> new NightFuryArmorItem(ModArmorMaterials.NIGHTFURYSCALE, EquipmentSlot.FEET,
-                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
-    public static final RegistryObject<Item> WINGEDNIGHTFURYSCALECHESTPLATE = ITEMS.register("winged_nightfury_chestplate",
-            () -> new WingedNightFuryArmorItem(ModArmorMaterials.NIGHTFURYSCALE, EquipmentSlot.CHEST,
                     new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public static void register(IEventBus eventBus) {
